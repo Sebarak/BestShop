@@ -9,7 +9,9 @@
 
 :root{
     --color-primary: #08A6E4;
-    --color-primary-shadow: rgba(7, 172, 230, .16);
+    --color-primary-shadow: rgba(7, 172, 230, 0.19);
+    --color-green-shadow: rgba(58, 253, 197, 0.24);
+    --color-redish-shadow: rgba(248, 81, 118, 0.23);
     --color-redish: #FB3B64;
     --color-green: #55DFB4;
     --color-black: #000;
@@ -339,3 +341,157 @@ main h2{
     cursor:pointer;
     transform: scale(1.1);
 }
+
+/*PAGE PRICE SECTION*/
+
+.price{
+    width: 100%;
+    padding: 100px 0;
+}
+
+.price .container{
+    display: flex;
+    flex-direction: column;
+}
+
+.price_section{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.price_option{
+    width: 372px;
+    height: 461px;
+    border-radius: 18px;
+    text-align: center;
+    padding: 34px 120px;
+    margin-top: 70px;
+    transition: all linear .1s;
+}
+
+.price_option:first-of-type{
+    margin-right: 60px;
+    border: 1px solid var(--color-redish);
+}
+
+.price_option:nth-of-type(2){
+    margin-right: 60px;
+    border: 1px solid var(--color-primary);
+}
+
+.price_option:nth-of-type(3){
+    border: 1px solid var(--color-green);
+}
+
+.price h2{
+    text-align: center;
+    font: normal normal normal 36px/42px Raleway,sans-serif;
+}
+
+.price_option h3{
+    font: normal normal bold 20px/1px Raleway,sans-serif;
+    color: #13253B;
+    padding-bottom: 15px;
+}
+
+.p1{
+    font: normal normal 300 46px/2px "Open Sans",sans-serif;
+    color: var(--color-redish);
+    padding: 35px 0 100px 0;
+}
+.p2{
+    font: normal normal 300 46px/2px "Open Sans",sans-serif;
+    color: var(--color-primary);
+    padding: 35px 0 40px 0;
+}
+.p3{
+    font: normal normal 300 46px/2px "Open Sans",sans-serif;
+    color: var(--color-green);
+    padding: 35px 0 40px 0;
+}
+
+h5{
+    font: normal normal bold 12px/1px Raleway,sans-serif;
+    color: #13253B;
+    padding: 0 0 62px 0;
+}
+
+.price_option ul li{
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: "Open Sans",sans-serif;
+    line-height: 1.1rem;
+}
+
+.price_option ul li::before{
+    content: url("../assets/Ckechmark-1.svg");
+    width: 11px;
+    height: 11px;
+    padding-right: 10px;
+}
+
+.list1 li:nth-of-type(4)::before,
+.list1 li:nth-of-type(5)::before{
+    content: url("../assets/Close.svg");
+    width: 11px;
+    height: 11px;
+    padding-right: 10px;
+}
+
+.list2 li:nth-of-type(5)::before{
+    content: url("../assets/Close.svg");
+    width: 11px;
+    height: 11px;
+    padding-right: 10px;
+}
+
+.price_option::after{
+    content: "";
+    width: 150px;
+    height: 50px;
+    border-radius: 23px;
+    position: absolute;
+    bottom: -25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    font: normal normal bold 13px/41px "Open Sans",sans-serif;
+    color: var(--color-white);
+}
+
+.price_option:first-of-type::after{
+    content: "Begin";
+    background: var(--color-redish);
+}
+
+.price_option:nth-of-type(2)::after{
+    content: "Begin";
+    background: var(--color-primary);
+}
+
+.price_option:nth-of-type(3)::after{
+    content: "Begin";
+    background: var(--color-green);
+}
+
+.price_option:hover{
+    cursor:pointer;
+    transform: scale(1.1);
+}
+
+.price_option:nth-of-type(1):hover{
+    box-shadow: 5px 10px 27px var(--color-redish-shadow);
+}
+
+.price_option:nth-of-type(2):hover{
+    box-shadow: 5px 10px 27px var(--color-primary-shadow);
+}
+
+.price_option:nth-of-type(3):hover{
+    box-shadow: 5px 10px 27px var(--color-green-shadow);
+}
+
+/*PAGE CONTACT*/
+
