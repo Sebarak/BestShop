@@ -193,3 +193,149 @@ main h2{
 }
 
 /*PAGE CONTENT*/
+
+.content{
+    width: 100%;
+    background: var(--color-light-grey);
+    padding: 70px 0;
+}
+
+.content .container{
+    flex-direction: column;
+}
+
+.content_option{
+    background: var(--color-white);
+    margin:37px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1124px;
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+    padding: 35px 35px 10px 35px;
+    position: relative;
+    transition: all linear .1s;
+}
+
+.content_option:first-of-type img{
+    width: 386px;
+    height: 219px;
+    margin: 75px 80px 25px 170px;
+    position: relative;
+    z-index: 1;
+}
+
+.content_option:nth-of-type(2) img{
+    width: 426px;
+    height: 328px;
+    margin: 0 170px 0 0;
+    position: relative;
+    z-index: 1;
+}
+
+.content_position img{
+    width: 296px;
+    height: 208px;
+    position: relative;
+}
+
+.content_position{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content_position .content_option{
+    width: 623px;
+    height: 370px;
+}
+
+.content_trumpet{
+    background: var(--color-green);
+    width: 440px;
+    height: 370px;
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60px;
+    transition: all linear .1s;
+}
+
+.content_option h2{
+    text-align: left;
+    font: normal normal normal 36px/42px Raleway, sans-serif;
+    margin-top: -50px;
+    width: 250px;
+}
+
+.content_option h2:last-of-type{
+    width: 350px;
+}
+
+.content_option p{
+    text-align: left;
+    font: normal normal normal 16px/22px "Open Sans",sans-serif;
+    padding-top: 30px;
+}
+
+.content_substance{
+    padding-top: 70px;
+    height: 230px;
+}
+
+.content_substance::after{
+    content: "";
+    display: block;
+    width: 328px;
+    margin: 45px 0 20px 0;
+    border-radius: 20px;
+}
+
+.line1::after{
+    border: 2px solid var(--color-redish);
+}
+
+.line2::after{
+    border: 2px solid var(--color-primary);
+}
+
+.line3::after{
+    border: 2px solid var(--color-green);
+}
+
+.container > .content_option:nth-child(1)::before{
+    content: "";
+    width: 200px;
+    height: 200px;
+    background: red;
+    position: absolute;
+    border-radius: 41px;
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    right: 70px;
+    z-index: 0;
+}
+
+.container > .content_option:nth-child(2)::before{
+    content: "";
+    width: 320px;
+    height: 320px;
+    background: var(--color-primary);
+    position: absolute;
+    border-radius: 50%;
+    top: 15px;
+    left: 70px;
+    z-index: 0;
+}
+
+.content_option:hover{
+    cursor:pointer;
+    transform: scale(1.1);
+}
+
+.content_trumpet:hover{
+    cursor:pointer;
+    transform: scale(1.1);
+}
