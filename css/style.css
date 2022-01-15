@@ -36,11 +36,12 @@ a{
 /*PAGE HEADER*/
 
 header{
-    position: absolute;
+    position: sticky;
     top: 0;
     width: 100%;
     background: var(--color-white);
     margin-bottom: 0;
+    z-index: 0;
 }
 
 header .container{
@@ -132,6 +133,8 @@ li a{
 main{
     width: 100%;
     background: var(--color-white);
+    position: relative;
+    z-index: 1;
 }
 
 main .container{
@@ -198,6 +201,7 @@ main h2{
     width: 100%;
     background: var(--color-light-grey);
     padding: 70px 0;
+    position: relative;
 }
 
 .content .container{
@@ -345,6 +349,9 @@ main h2{
 .price{
     width: 100%;
     padding: 100px 0;
+    position: relative;
+    z-index: 1;
+    background: var(--color-white);
 }
 
 .price .container{
@@ -496,6 +503,8 @@ h5{
 .contact{
     width: 100%;
     padding-bottom: 200px;
+    background: var(--color-white);
+    position: relative;
 }
 
 .contact .container{
@@ -528,11 +537,13 @@ h5{
     color: var(--color-grey);
     padding-bottom: 0;
     display: inline-block;
-    padding-right: 57px;
+    margin-right: 50px;
+    cursor: pointer;
 }
 
 .contact_que_info p:nth-of-type(2){
     padding: 0;
+    margin: 0;
 }
 
 .contact_area{
@@ -606,6 +617,20 @@ input[type="email"]{
 
 .contact button:hover{
     transform: scale(1.1);
+}
+
+.contact_que_info p:first-of-type::before{
+    content: url("../assets/Mail Icon.svg");
+    position: relative;
+    left: 0;
+    bottom: -8px;
+}
+
+.contact_que_info p:nth-of-type(2)::before{
+    content: url("../assets/Phone Icon.svg");
+    position: relative;
+    left: 0;
+    bottom: -8px;
 }
 
 /*PAGE FOOTER*/
