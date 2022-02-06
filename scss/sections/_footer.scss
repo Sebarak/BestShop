@@ -1,0 +1,32 @@
+footer{
+  width: 100%;
+  height: 89px;
+  background: $color-light-grey;
+  box-shadow: 0 -5px 40px #00000029;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer h2{
+  font: normal normal 300 26px/30px Raleway,sans-serif;
+  color: $color-primary;
+}
+
+footer h2:hover{
+  cursor: pointer;
+}
+
+footer h6{
+  font: normal normal normal 11px/15px "Open Sans",sans-serif;
+  color: $color-grey;
+}
+
+.footer_icons img:last-of-type{
+  padding: 20px;
+}
+
+.footer_icons img:hover{
+  cursor:pointer;
+}

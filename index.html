@@ -5,26 +5,27 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+          integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="css/main.css">
     <title>Best_Shopping</title>
 </head>
 <body>
 
-<header>
-    <div class="container">
-        <div class="logo">
-            <h2>BestShop</h2>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#why_us">Why us</a></li>
-                <li><a href="#benefits">Benefits</a></li>
-                <li><a href="#price">Prices</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+<header class="container">
+    <div class="logo">
+        <h2>BestShop</h2>
     </div>
+    <nav>
+        <input type="checkbox" class="hamburder">
+        <ul>
+            <li><a href="#why_us">Why us</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+            <li><a href="#price">Prices</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 </header>
 
 <section class="banner">
@@ -41,21 +42,21 @@
         <h2>The most popular sales platform in country</h2>
         <section class="option">
             <div>
-                <div class="option_img">
+                <div class="option_img1">
                     <img src="assets/Person.svg" alt="person">
                 </div>
                 <h3>100000+</h3>
                 <p>daily entries</p>
             </div>
             <div>
-                <div class="option_img">
+                <div class="option_img2">
                     <img src="assets/Eye.svg" alt="eye">
                 </div>
                 <h3>200000+</h3>
                 <p>seen products every day</p>
             </div>
             <div>
-                <div class="option_img">
+                <div class="option_img3">
                     <img src="assets/Catalog.svg" alt="catalog">
                 </div>
                 <h3>10000+</h3>
@@ -65,112 +66,181 @@
     </div>
 </main>
 
-<section class="content" id="benefits">
-    <div class="container">
+<section class="content container" id="benefits">
+    <section class="content_option">
+        <div class="content_substance line1">
+            <h2>Be always first</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        </div>
+        <img src="assets/Macbook.png" alt="macbook">
+    </section>
+    <section class="content_option">
+        <div class="content_substance line2">
+            <h2>Your shop is where you are!</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        </div>
+        <img src="assets/iPhone.png" alt="phone">
+    </section>
+    <div class="content_position">
         <section class="content_option">
-            <div class="content_substance line1">
-                <h2>Be always first</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam.</p>
-            </div>
-            <img src="assets/Macbook.png" alt="macbook">
-        </section>
-        <section class="content_option">
-            <img src="assets/iPhone.png" alt="phone">
-            <div class="content_substance line2">
-                <h2>Your shop is where you are!</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            <div class="content_substance line3">
+                <h2>Increase recognition your brand!</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
             </div>
         </section>
-        <div class="content_position">
-            <section class="content_option">
-                <div class="content_substance line3">
-                    <h2>Increase recognition your brand!</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <div class="content_trumpet">
+            <img src="assets/Trumpet.png" alt="trumpet">
+        </div>
+    </div>
+</section>
+
+<section class="price container" id="price">
+    <h2>Pricing</h2>
+    <section class="price_section">
+        <div class="price_option">
+            <div class="price_name">
+                <h3>Basic</h3>
+                <h4 class="p1">$0</h4>
+            </div>
+            <ul class="list1">
+                <li>100 MB HDD</li>
+                <li>1 Subdomain</li>
+                <li>2 E-mails</li>
+                <li>Two years license</li>
+                <li>Full support</li>
+            </ul>
+        </div>
+        <div class="price_option">
+            <div class="price_name">
+                <h3>Professional</h3>
+                <h4 class="p2">$25</h4>
+                <h5>Limited offer</h5>
+            </div>
+            <ul class="list2">
+                <li>500 MB HDD</li>
+                <li>2 Subdomain</li>
+                <li>5 E-mails</li>
+                <li>One years license</li>
+                <li>Full support</li>
+            </ul>
+        </div>
+        <div class="price_option">
+            <div class="price_name">
+                <h3>Premium</h3>
+                <h4 class="p3">$60</h4>
+                <h5>Limited offer</h5>
+            </div>
+            <ul>
+                <li>2 GB HDD</li>
+                <li>5 Subdomain</li>
+                <li>20 E-mails</li>
+                <li>Two years license</li>
+                <li>Full support</li>
+            </ul>
+        </div>
+    </section>
+</section>
+
+<section class="calc">
+    <h2>Calculate how much you’ll pay</h2>
+
+    <div class="calc__columns">
+        <form class="calc__form">
+            <div class="calc__input">
+                <input type="number" class="form__input" id="products" min="1" step="1" placeholder="Products quantity"/>
+            </div>
+            <div class="calc__input">
+                <input type="number" class="form__input" id="orders" min="1" step="1" placeholder="Estimated orders in month"/>
+            </div>
+            <div class="calc__select" id="package" data-value="">
+                <div class="select__input">
+                    Choose package
                 </div>
-            </section>
-            <div class="content_trumpet">
-                <img src="assets/Trumpet.png" alt="trumpet">
+
+                <ul class="select__dropdown">
+                    <li data-value="basic" data-price="0">Basic</li>
+                    <li data-value="professional" data-price="25">Professional</li>
+                    <li data-value="premium" data-price="60">Premium</li>
+                </ul>
+            </div>
+            <label class="form__checkbox">
+                <input type="checkbox" id="accounting"/>
+                <span class="checkbox"></span>
+                <p class="consent__text">Accounting</p>
+            </label>
+            <label class="form__checkbox">
+                <input type="checkbox" id="terminal"/>
+                <span class="checkbox"></span>
+                <p class="consent__text">Rental of a payment terminal</p>
+            </label>
+        </form>
+
+        <div class="calc__summary">
+            <ul>
+                <li class="list__item" data-id="products">
+                    <span class="item__type">Products</span>
+                    <span class="item__calc">20 * $0.5</span>
+                    <span class="item__price">$10</span>
+                </li>
+                <li class="list__item" data-id="orders">
+                    <span class="item__type">Orders</span>
+                    <span class="item__calc">20 * $0.5</span>
+                    <span class="item__price">$10</span>
+                </li>
+                <li class="list__item" data-id="package">
+                    <span class="item__type">Package</span>
+                    <span class="item__calc">Premium</span>
+                    <span class="item__price">$10</span>
+                </li>
+                <li class="list__item" data-id="accounting">
+                    <span class="item__type">Accounting</span>
+                    <span class="item__price">$10</span>
+                </li>
+                <li class="list__item" data-id="terminal">
+                    <span class="item__type">Terminal</span>
+                    <span class="item__price">$10</span>
+                </li>
+            </ul>
+            <div class="summary__total" id="total-price">
+                <span>Total</span>
+                <span class="total__price">$700</span>
             </div>
         </div>
     </div>
 </section>
 
-<section class="price" id="price">
-    <div class="container">
-        <h2>Pricing</h2>
-        <section class="price_section">
-            <div class="price_option">
-                <h3>Basic</h3>
-                <h4 class="p1">$0</h4>
-                <ul class="list1">
-                    <li>100 MB HDD</li>
-                    <li>1 Subdomain</li>
-                    <li>2 E-mails</li>
-                    <li>Two years license</li>
-                    <li>Full support</li>
-                </ul>
-            </div>
-            <div class="price_option">
-                <h3>Professional</h3>
-                <h4 class="p2">$25</h4>
-                <h5>Limited offer</h5>
-                <ul class="list2">
-                    <li>500 MB HDD</li>
-                    <li>2 Subdomain</li>
-                    <li>5 E-mails</li>
-                    <li>One years license</li>
-                    <li>Full support</li>
-                </ul>
-            </div>
-            <div class="price_option">
-                <h3>Premium</h3>
-                <h4 class="p3">$60</h4>
-                <h5>Limited offer</h5>
-                <ul>
-                    <li>2 GB HDD</li>
-                    <li>5 Subdomain</li>
-                    <li>20 E-mails</li>
-                    <li>Two years license</li>
-                    <li>Full support</li>
-                </ul>
-            </div>
-        </section>
-    </div>
-</section>
 
-<section class="contact" id="contact">
-    <div class="container">
-        <section class="contact_question">
-            <h2>Any questions?</h2>
-            <p>Leave your email address or call us!</p>
-            <div class="contact_que_info">
-                <p>info@bestshop.xyz</p>
-                <p>123 456 789</p>
-            </div>
-        </section>
-        <section class="contact_area">
-            <label for="name">NAME</label>
-            <input type="text" id="name">
-            <label for="email">EMAIL</label>
-            <input type="email" id="email">
-            <div class="checkbox_area">
-                <input type="checkbox" id="checkbox">
-                <label for="checkbox">I hereby give consent for my personal data included in my application to be
-                    processed
-                    for the purposes of
-                    the recruitment process under the European Parliament’s and Council of the European Union Regulation
-                    on
-                    the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal
-                    data
-                    and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection
-                    Directive)</label>
-            </div>
-            <button>Send</button>
-        </section>
-    </div>
+<section class="contact container" id="contact">
+    <section class="contact_question">
+        <h2>Any questions?</h2>
+        <p>Leave your email address or call us!</p>
+        <div class="contact_que_info">
+            <p>info@bestshop.xyz</p>
+            <p>123 456 789</p>
+        </div>
+    </section>
+    <section class="contact_area">
+        <label for="name">NAME</label>
+        <input type="text" id="name">
+        <label for="email">EMAIL</label>
+        <input type="email" id="email">
+        <div class="checkbox_area">
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox">I hereby give consent for my personal data included in my application to be
+                processed
+                for the purposes of
+                the recruitment process under the European Parliament’s and Council of the European Union Regulation
+                on
+                the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal
+                data
+                and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection
+                Directive)</label>
+        </div>
+        <button>Send</button>
+    </section>
 </section>
 
 <footer>
@@ -186,5 +256,6 @@
     </div>
 </footer>
 
+<script src="/js/app.js"></script>
 </body>
 </html>
